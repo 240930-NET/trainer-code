@@ -1,5 +1,5 @@
 # Training Overview
-Welcome! This document aims to give you an overview of what's coming in the next 8 weeks.
+Welcome! This document aims to give you an overview of what's coming in the next 9 weeks.
 
 ## General Info
 - Dates: 09/30/24 - 11/30/24 (9 weeks)
