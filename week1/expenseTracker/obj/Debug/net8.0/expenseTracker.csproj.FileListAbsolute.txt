@@ -1,0 +1,15 @@
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\expenseTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\expenseTracker.AssemblyInfoInputs.cache
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\expenseTracker.AssemblyInfo.cs
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\expenseTracker.csproj.CoreCompileInputs.cache
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\expenseTracker.sourcelink.json
+C:\training\240930-NET\week1\expenseTracker\bin\Debug\net8.0\expenseTracker.exe
+C:\training\240930-NET\week1\expenseTracker\bin\Debug\net8.0\expenseTracker.deps.json
+C:\training\240930-NET\week1\expenseTracker\bin\Debug\net8.0\expenseTracker.runtimeconfig.json
+C:\training\240930-NET\week1\expenseTracker\bin\Debug\net8.0\expenseTracker.dll
+C:\training\240930-NET\week1\expenseTracker\bin\Debug\net8.0\expenseTracker.pdb
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\expenseTracker.dll
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\refint\expenseTracker.dll
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\expenseTracker.pdb
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\expenseTracker.genruntimeconfig.cache
+C:\training\240930-NET\week1\expenseTracker\obj\Debug\net8.0\ref\expenseTracker.dll
