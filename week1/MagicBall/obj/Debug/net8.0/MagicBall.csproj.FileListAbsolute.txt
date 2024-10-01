@@ -1,0 +1,15 @@
+C:\training\240930-NET\week1\MagicBall\bin\Debug\net8.0\MagicBall.exe
+C:\training\240930-NET\week1\MagicBall\bin\Debug\net8.0\MagicBall.deps.json
+C:\training\240930-NET\week1\MagicBall\bin\Debug\net8.0\MagicBall.runtimeconfig.json
+C:\training\240930-NET\week1\MagicBall\bin\Debug\net8.0\MagicBall.dll
+C:\training\240930-NET\week1\MagicBall\bin\Debug\net8.0\MagicBall.pdb
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\MagicBall.GeneratedMSBuildEditorConfig.editorconfig
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\MagicBall.AssemblyInfoInputs.cache
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\MagicBall.AssemblyInfo.cs
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\MagicBall.csproj.CoreCompileInputs.cache
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\MagicBall.sourcelink.json
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\MagicBall.dll
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\refint\MagicBall.dll
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\MagicBall.pdb
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\MagicBall.genruntimeconfig.cache
+C:\training\240930-NET\week1\MagicBall\obj\Debug\net8.0\ref\MagicBall.dll
