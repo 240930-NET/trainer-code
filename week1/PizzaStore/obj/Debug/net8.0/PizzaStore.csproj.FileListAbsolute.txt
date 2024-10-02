@@ -1,0 +1,15 @@
+C:\training\240930-NET\week1\PizzaStore\bin\Debug\net8.0\PizzaStore.exe
+C:\training\240930-NET\week1\PizzaStore\bin\Debug\net8.0\PizzaStore.deps.json
+C:\training\240930-NET\week1\PizzaStore\bin\Debug\net8.0\PizzaStore.runtimeconfig.json
+C:\training\240930-NET\week1\PizzaStore\bin\Debug\net8.0\PizzaStore.dll
+C:\training\240930-NET\week1\PizzaStore\bin\Debug\net8.0\PizzaStore.pdb
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\PizzaStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\PizzaStore.AssemblyInfoInputs.cache
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\PizzaStore.AssemblyInfo.cs
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\PizzaStore.csproj.CoreCompileInputs.cache
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\PizzaStore.sourcelink.json
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\PizzaStore.dll
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\refint\PizzaStore.dll
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\PizzaStore.pdb
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\PizzaStore.genruntimeconfig.cache
+C:\training\240930-NET\week1\PizzaStore\obj\Debug\net8.0\ref\PizzaStore.dll

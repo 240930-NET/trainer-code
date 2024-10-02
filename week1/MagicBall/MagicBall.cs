@@ -35,6 +35,7 @@
             "You will feel happy and fulfilled!"
         };
 
+    
         // Create a new instance of the Random class
         Random numberGenerator = new Random();
         int randomIndex = numberGenerator.Next(predictions.Length);
