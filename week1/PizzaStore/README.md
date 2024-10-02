@@ -10,7 +10,7 @@ class PineApplePizza : Pizza {
 
 #### Abstraction
 
-- It means hiding all complex details and only show nessesary one. In C# it is achieved by using interfaces and abstract classes. 
+- It means hiding all complex details and only showing the necessary one. In C#, it is achieved by using interfaces and abstract classes.
 
 We can implement as many interfaces as we want, but we can inherit only one class.
 
@@ -31,7 +31,7 @@ abstract class Pizza{
 ```
 
 
-If you have 2 interfaces with the same methods names, use explicit method call
+If you have 2 interfaces with the same method names, use explicit method calls.
 
 ```cs
 public class SampleClass : IControl, ISurface
