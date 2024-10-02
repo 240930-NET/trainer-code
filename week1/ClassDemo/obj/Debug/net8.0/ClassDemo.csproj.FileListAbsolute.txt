@@ -1,0 +1,15 @@
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\ClassDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\ClassDemo.AssemblyInfoInputs.cache
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\ClassDemo.AssemblyInfo.cs
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\ClassDemo.csproj.CoreCompileInputs.cache
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\ClassDemo.sourcelink.json
+C:\training\240930-NET\week1\ClassDemo\bin\Debug\net8.0\ClassDemo.exe
+C:\training\240930-NET\week1\ClassDemo\bin\Debug\net8.0\ClassDemo.deps.json
+C:\training\240930-NET\week1\ClassDemo\bin\Debug\net8.0\ClassDemo.runtimeconfig.json
+C:\training\240930-NET\week1\ClassDemo\bin\Debug\net8.0\ClassDemo.dll
+C:\training\240930-NET\week1\ClassDemo\bin\Debug\net8.0\ClassDemo.pdb
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\ClassDemo.dll
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\refint\ClassDemo.dll
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\ClassDemo.pdb
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\ClassDemo.genruntimeconfig.cache
+C:\training\240930-NET\week1\ClassDemo\obj\Debug\net8.0\ref\ClassDemo.dll
