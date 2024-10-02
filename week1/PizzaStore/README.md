@@ -47,3 +47,45 @@ public class SampleClass : IControl, ISurface
 }
 
 ```
+
+#### Polymorphism 
+
+It means "many shapes", it is achieved by using method **overriding** and method **overloading**. 
+
+
+```csharp
+
+//Parent class Pizza.cs
+
+    public virtual void CutPizza(){
+        Console.WriteLine("Cutting Pizza...");
+    }
+
+
+//Child class PineApplePizza.cs 
+
+    public override void CutPizza(){ // overriding parent's implementation
+        Console.WriteLine("Cutting " + pizzaName);
+    }
+
+        //Method Overloading
+    public void AddToppings(){
+        Console.WriteLine($"Adding: toppings");
+    }
+
+    public void AddToppings(string veggies, string protein){
+        Console.WriteLine($"Adding: {veggies} and {protein}");
+    }
+
+```
+
+### Encapsulation
+
+Putting all related data together in one single class (or unit) and it helps us to hide important details. We also provide mechanism (getters and setters ) to interact with out properties. 
+
+Access modifiers: 
+
+- private (the most restricted one)
+- protected (only class itself and its children can access it)
+- internal (pne assembly)
+- public (all can see it)

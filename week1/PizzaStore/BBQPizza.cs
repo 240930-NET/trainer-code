@@ -10,4 +10,11 @@ class BBQPizza : Pizza, IPizza{
     public void addProtein(){
         Console.WriteLine("Add: Ham");
     } 
+
+     public override void DisplayPizzaData(){
+        Console.WriteLine("Here is the pizza:\n");
+        Console.WriteLine("Name: " + pizzaName);
+        Console.WriteLine("Description: " + getDescription());
+
+    }
 }
