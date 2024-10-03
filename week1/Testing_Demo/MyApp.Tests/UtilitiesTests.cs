@@ -53,4 +53,24 @@ public class UtilitiesTests
         Assert.Contains(name, nameList);
     }
 
+    [Fact]
+    public void Util_List_Name_Works()
+    {
+        //Arrange
+        List<string> nameList = [
+            "Kung",
+            "Vlada"
+        ];
+
+        StringWriter sw = new();
+        
+        //Act
+        Utilities.ListNamesDI(nameList, sw);
+
+        //string[] nameArr = sw.ToString().Split("\r\n");
+
+        //Assert
+        Assert.Contains("Kung", sw.ToString());
+    }
+
 }

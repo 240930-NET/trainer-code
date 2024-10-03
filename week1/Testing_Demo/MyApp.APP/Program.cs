@@ -1,12 +1,30 @@
-﻿namespace MyApp.APP;
+﻿//Why and how we use properties
+// Point myP = new();
+
+        // myP.Set_X(45);
+        // int varX = myP.Get_X();
+
+        // myP.Y = -466;
+        // int varY = myP.Y;
+
+        // Console.WriteLine(myP);
+
+namespace MyApp.APP;
 
 using MyApp.APP.Utils;
+using Horoscope;
 
 class Program
 {
     static void Main(string[] args)
     {
-        List<string> names = new List<string>();
+        var zodiacSign = Zodiac.GetZodiacSignForDate(new DateTime(1992, 10, 14));
+
+        Console.WriteLine(zodiacSign.ZodiacName);        
+        
+        List<string> names = [];
+
+        Menu.DisplayBanner(Console.Out);
         
         while(true)
         {            
@@ -35,7 +53,7 @@ class Program
                     break;
 
                 case 4:
-                    Utilities.ListNames(names);
+                    Utilities.ListNamesDI(names, Console.Out);
                     break;
 
                 case 0:

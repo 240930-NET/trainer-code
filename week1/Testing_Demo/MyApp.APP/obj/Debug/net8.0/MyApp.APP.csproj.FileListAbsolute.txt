@@ -13,3 +13,6 @@ C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_D
 C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.APP\obj\Debug\net8.0\MyApp.APP.pdb
 C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.APP\obj\Debug\net8.0\MyApp.APP.genruntimeconfig.cache
 C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.APP\obj\Debug\net8.0\ref\MyApp.APP.dll
+C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.APP\bin\Debug\net8.0\Horoscope.dll
+C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.APP\obj\Debug\net8.0\MyApp.APP.csproj.AssemblyReference.cache
+C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.APP\obj\Debug\net8.0\MyApp.APP.csproj.Up2Date

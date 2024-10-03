@@ -2,7 +2,7 @@ namespace MyApp.Tests;
 
 public class UnitTest1
 {
-    [Fact]
+    [Fact(Skip = "Test Template")]
     public void Test1()
     {
 

@@ -39,4 +39,17 @@ public class Utilities
             Console.WriteLine(name);
         }
     }
+
+    public static void ListNamesDI(List<string> nameList, TextWriter tWriter)
+    {
+        foreach(var name in nameList)
+        {
+            tWriter.WriteLine(name);
+        }
+    }
+
+    public bool IsPrime(int n)
+    {
+        throw new NotImplementedException();
+    }
 }

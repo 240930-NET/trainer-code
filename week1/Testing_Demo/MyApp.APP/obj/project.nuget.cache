@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tle67s6jvVQ=",
+  "dgSpecHash": "DIhI6ysTJ/A=",
   "success": true,
   "projectFilePath": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week1\\Testing_Demo\\MyApp.APP\\MyApp.APP.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\KungLo\\.nuget\\packages\\horoscope\\1.1.0\\horoscope.1.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
