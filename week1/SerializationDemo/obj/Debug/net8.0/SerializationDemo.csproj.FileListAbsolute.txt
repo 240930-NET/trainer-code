@@ -1,0 +1,15 @@
+C:\training\240930-NET\week1\SerializationDemo\bin\Debug\net8.0\SerializationDemo.exe
+C:\training\240930-NET\week1\SerializationDemo\bin\Debug\net8.0\SerializationDemo.deps.json
+C:\training\240930-NET\week1\SerializationDemo\bin\Debug\net8.0\SerializationDemo.runtimeconfig.json
+C:\training\240930-NET\week1\SerializationDemo\bin\Debug\net8.0\SerializationDemo.dll
+C:\training\240930-NET\week1\SerializationDemo\bin\Debug\net8.0\SerializationDemo.pdb
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\SerializationDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\SerializationDemo.AssemblyInfoInputs.cache
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\SerializationDemo.AssemblyInfo.cs
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\SerializationDemo.csproj.CoreCompileInputs.cache
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\SerializationDemo.sourcelink.json
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\SerializationDemo.dll
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\refint\SerializationDemo.dll
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\SerializationDemo.pdb
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\SerializationDemo.genruntimeconfig.cache
+C:\training\240930-NET\week1\SerializationDemo\obj\Debug\net8.0\ref\SerializationDemo.dll
