@@ -98,3 +98,9 @@ C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_D
 C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.Tests\obj\Debug\net8.0\MyApp.Tests.pdb
 C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.Tests\obj\Debug\net8.0\MyApp.Tests.genruntimeconfig.cache
 C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.Tests\obj\Debug\net8.0\ref\MyApp.Tests.dll
+C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_MyApp.Tests
+C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.Tests\bin\Debug\net8.0\MyApp.APP.deps.json
+C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.Tests\bin\Debug\net8.0\MyApp.APP.runtimeconfig.json
+C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.Tests\bin\Debug\net8.0\MyApp.APP.exe
+C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.Tests\bin\Debug\net8.0\MyApp.APP.dll
+C:\Users\KungLo\Desktop\Revature\Cohorts\240930-NET\trainer-code\week1\Testing_Demo\MyApp.Tests\bin\Debug\net8.0\MyApp.APP.pdb
