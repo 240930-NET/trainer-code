@@ -1,0 +1,15 @@
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\FileIO.GeneratedMSBuildEditorConfig.editorconfig
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\FileIO.AssemblyInfoInputs.cache
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\FileIO.AssemblyInfo.cs
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\FileIO.csproj.CoreCompileInputs.cache
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\FileIO.sourcelink.json
+C:\training\240930-NET\week1\FileIO\bin\Debug\net8.0\FileIO.exe
+C:\training\240930-NET\week1\FileIO\bin\Debug\net8.0\FileIO.deps.json
+C:\training\240930-NET\week1\FileIO\bin\Debug\net8.0\FileIO.runtimeconfig.json
+C:\training\240930-NET\week1\FileIO\bin\Debug\net8.0\FileIO.dll
+C:\training\240930-NET\week1\FileIO\bin\Debug\net8.0\FileIO.pdb
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\FileIO.dll
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\refint\FileIO.dll
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\FileIO.pdb
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\FileIO.genruntimeconfig.cache
+C:\training\240930-NET\week1\FileIO\obj\Debug\net8.0\ref\FileIO.dll
