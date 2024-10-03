@@ -1,4 +1,4 @@
-static class Menu{
+public static class Menu{
 
     //Greet user
     public static void Greetings(){
@@ -13,6 +13,7 @@ static class Menu{
         Console.WriteLine("2. Edit an Expense");
         Console.WriteLine("3. Delete an Expense");
         Console.WriteLine("4. Display All");
+        Console.WriteLine("5. Save data");
         Console.WriteLine("9. Leave the app");
     }
 
