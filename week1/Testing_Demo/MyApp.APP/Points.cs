@@ -10,7 +10,7 @@ public class Point
     public void Set_X(int x)
     {
         if(x < -100) _x = -100;
-        if(x > 100) _x = 100;
+        else if(x > 100) _x = 100;
         else _x = x;
     }
 
@@ -24,7 +24,7 @@ public class Point
         set
         {
             if(value < -100) _y = -100;
-            if(value > 100) _y = 100;
+            else if(value > 100) _y = 100;
             else _y = value;
         }
     }
