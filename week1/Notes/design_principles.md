@@ -81,7 +81,6 @@
 ## Dependency Injection
 - A technique in which object or function objects receive the other required objects instead of creating them you just inject them
 - reusability, flexibility
-- For the demo, go take a look at Ulada's P0, dep-injection branch
 
 
 ### What's the difference between dependency injection and dependency inversion?
