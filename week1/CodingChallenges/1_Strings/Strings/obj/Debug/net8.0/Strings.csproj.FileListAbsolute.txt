@@ -1,0 +1,15 @@
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\bin\Debug\net8.0\Strings.exe
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\bin\Debug\net8.0\Strings.deps.json
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\bin\Debug\net8.0\Strings.runtimeconfig.json
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\bin\Debug\net8.0\Strings.dll
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\bin\Debug\net8.0\Strings.pdb
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\Strings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\Strings.AssemblyInfoInputs.cache
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\Strings.AssemblyInfo.cs
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\Strings.csproj.CoreCompileInputs.cache
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\Strings.sourcelink.json
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\Strings.dll
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\refint\Strings.dll
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\Strings.pdb
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\Strings.genruntimeconfig.cache
+C:\Users\KungLo\Desktop\Revature\Cohorts\Trainer-code\week1\CodingChallenges\1_Strings\Strings\obj\Debug\net8.0\ref\Strings.dll
