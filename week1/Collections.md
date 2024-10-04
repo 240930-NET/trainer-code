@@ -5,23 +5,23 @@ We have 2 types of collections in C#
 - **Generics** (allow us to store data of a **certain** type)
 - **Non-generic collections** (any data type can be stored here)
 
-For non-generic collections we need to perform 
+For non-generic collections, we need to perform
 **Boxing** and **Unboxing**
 
 ```csharp
 //Boxing - from value type to reference type
 
 int Myinteger = 6; // value type
-object myConvertedInteger = Myinteger; // now it is a reference type
+object myConvertedInteger = Myinteger; // Now it is a reference type.
 
 
-// Unboxing - from to reference type to value
+// Unboxing - from reference type to value
 object anotherType = 123;
 int convertedReference = (int)anotherType;
 
 ```
 
-**Data Types in non-generics:**
+**Data Types in Non-Generics:**
 
 - ArrayList ( resizable, but can store any type);
 
@@ -41,14 +41,14 @@ Hashtable MyHastable = new Hashtable();
 MyHastable.Add(1, "String");
 ```
 
-- Queue (FIFO) 
+- Queue (FIFO)
 
 ```csharp
 Queue myqueue = new Queue();
 myqueue.Enqueue(1);
 ```
 
-- Stack (LIFO) 
+- Stack (LIFO)
 
 ```csharp
 Stack stack = new Stack();
@@ -60,9 +60,9 @@ var topstackElement = stack.Pop();
 ```
 
 
-## Generics 
+## Generics
 
-Belongs to ```System.Collections.Generic``` namespace. 
+Belongs to ```System.Collections.Generic``` namespace.
 
 ```csharp
 
@@ -72,12 +72,12 @@ List<T> // T - means a certain type, you mast declare and only this Type is allo
 
 **Generic Data Collections:**
 ```csharp
-- List<T> 
+- List<T>
 - Dictionary<TKey, TValue>
 
 Dictionary<int, string> myDictionary = new Dictionary<int,string>(); // Dictionary<TKey,
 
-- HashSet <T> 
+- HashSet <T>
 
 - Queue <T>
 - Stack<T>
