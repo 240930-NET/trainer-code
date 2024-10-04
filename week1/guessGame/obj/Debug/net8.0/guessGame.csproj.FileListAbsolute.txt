@@ -1,0 +1,15 @@
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\guessGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\guessGame.AssemblyInfoInputs.cache
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\guessGame.AssemblyInfo.cs
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\guessGame.csproj.CoreCompileInputs.cache
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\guessGame.sourcelink.json
+C:\training\240930-NET\week1\guessGame\bin\Debug\net8.0\guessGame.exe
+C:\training\240930-NET\week1\guessGame\bin\Debug\net8.0\guessGame.deps.json
+C:\training\240930-NET\week1\guessGame\bin\Debug\net8.0\guessGame.runtimeconfig.json
+C:\training\240930-NET\week1\guessGame\bin\Debug\net8.0\guessGame.dll
+C:\training\240930-NET\week1\guessGame\bin\Debug\net8.0\guessGame.pdb
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\guessGame.dll
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\refint\guessGame.dll
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\guessGame.pdb
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\guessGame.genruntimeconfig.cache
+C:\training\240930-NET\week1\guessGame\obj\Debug\net8.0\ref\guessGame.dll
