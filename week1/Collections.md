@@ -92,3 +92,29 @@ Dictionary<int, string> myDictionary = new Dictionary<int,string>(); // Dictiona
 - Queue - when you want Fifo behavio
 - Stack - when you want LIFO
 - LinkedList - when you frequently want to add or remove items from both ends of the list
+
+
+### IEnumerable
+
+This interface allows you to iterate over collections. We have IEnumerable (non-generics) and IEnumerable<T> for generic collections.
+
+```csharp
+
+List<string> names = new List<string>{ "Alice", "Vlada", "Bob"};
+
+IEnumerable<string> enumerableNames = names; 
+
+// You can do simple for loop to iterate over the names or use Enumerator instead to more control
+
+IEnumerator<string> enumerator = names.getEnumerator();
+
+while(enumerator.MoveNext()){
+    string currentName = enumerator.Current();
+    Console.WriteLine(currentName);
+}
+
+if(enumerator is IDisposable disposable){
+    disposable.Dispose();
+}
+
+```
