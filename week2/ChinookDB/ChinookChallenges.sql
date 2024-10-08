@@ -2,6 +2,14 @@
 
 -- BASIC CHALLENGES
 -- List all customers (full name, customer id, and country) who are not in the USA
+SELECT FirstName + ' ' + LastName AS full_name, CustomerId, Country 
+FROM Customer 
+WHERE Country != 'USA';
+
+SELECT CONCAT(FirstName,' ', LastName) AS full_name, CustomerId, Country 
+FROM Customer 
+WHERE Country != 'USA'; -- Guillame B.
+
     
 -- List all customers from Brazil
     
