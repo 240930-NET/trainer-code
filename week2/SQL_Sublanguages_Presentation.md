@@ -5,3 +5,5 @@
 ## Team 5: Transaction Control Language (TCL)
 
 ![Teams](./SQL_SUBPresetation_TEAM.png)
+
+5-8 min presentation with examples (Either PowerPoint or Azure Data Studio) and demostrations.
