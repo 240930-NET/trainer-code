@@ -6,6 +6,19 @@ public class Pet
     public string Animal_Type { get; set; } = "";
     public DateOnly Birthday { get; set; } = new DateOnly(1, 1, 0001);
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public Pet(string Name, string Animal_Type, DateOnly Birthday)
     {
         this.Name = Name;

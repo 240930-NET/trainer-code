@@ -6,6 +6,22 @@ public class Owner
     public string Phone_Number { get; set; } = "";
     public string Address { get; set; } = "";
 
+    public List<Pet> OwnedPet { get; set;} = [];
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public override string ToString()
     {
         return $"Name: {Name}\nPhone: {Phone_Number}\nAddress: {Address}";
