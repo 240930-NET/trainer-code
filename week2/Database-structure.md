@@ -68,6 +68,8 @@ MODIFY column_name datatype; /*Modify a column*/
 
 **Entity Relationship Diagram (ERD)** - entity Relationship Diagram is a graphical representation depicting the relationships among data objects within a database. These entities, such as people, objects or concepts relate to one another within the database.
 
+An ERD can be made using MS paint, lucidchart, etc.
+
 
 ## SQL (Structured Query Language)
 
