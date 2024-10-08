@@ -7,3 +7,5 @@
 ![Teams](./SQL_SUBPresetation_TEAM.png)
 
 5-8 min presentation with examples (Either PowerPoint or Azure Data Studio) and demostrations.
+
+For your sublanguage. Tell us what commands it encompasses and what they do. Setup some tests and show us cause and effects.
