@@ -27,7 +27,7 @@ INSERT INTO proj1.Owners VALUES (456, 'Kung', '8888675309', '1 one st, USA');
 INSERT INTO proj1.Owners VALUES (12, 'Vlada', '8888675310', '12 one st, USA');
 
 -- Insert Nyla and Horizon pets into DB
-INSERT INTO proj1.Pets VALUES ('Nyla', 'Cat', 12, '2012-10-11', 4563);
+INSERT INTO proj1.Pets VALUES ('Nyla', 'Cat', 12, '2012-10-11', 456);
 INSERT INTO proj1.Pets (name, animal_type, age, ownerID) VALUES ('Horizon', 'Dog', 1, 12);
 
 -- This insert will fail age check
