@@ -162,10 +162,10 @@ Structure associated with a table or view that speeds up the retrieval of rows f
 
 ```sql
 -- Create a Non-Clustered Index on Users table
-CREATE INDEX idx_UserID ON Users (userid);
+CREATE NONCLUSTERED INDEX idx_UserID ON Users (userid);
 
 -- Create a Clustered Index on Accounts table
-CREATE INDEX idx_AccountID ON Accounts (accountid);
+CREATE CLUSTERED INDEX idx_AccountID ON Accounts (accountid);
 
 -- Cluster the Accounts table based on the idx_AccountID index
 CLUSTER Accounts USING idx_AccountID;
