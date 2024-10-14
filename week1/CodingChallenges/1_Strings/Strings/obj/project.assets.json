@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\Trainer-code\\week1\\CodingChallenges\\1_Strings\\Strings\\Strings.csproj",
+      "projectUniqueName": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week1\\CodingChallenges\\1_Strings\\Strings\\Strings.csproj",
       "projectName": "Strings",
-      "projectPath": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\Trainer-code\\week1\\CodingChallenges\\1_Strings\\Strings\\Strings.csproj",
+      "projectPath": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week1\\CodingChallenges\\1_Strings\\Strings\\Strings.csproj",
       "packagesPath": "C:\\Users\\KungLo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\Trainer-code\\week1\\CodingChallenges\\1_Strings\\Strings\\obj\\",
+      "outputPath": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week1\\CodingChallenges\\1_Strings\\Strings\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KungLo\\AppData\\Roaming\\NuGet\\NuGet.Config"
