@@ -4,7 +4,7 @@ namespace EFRepoPatternDemo.Data;
 
 public class DonationRepo : IDonations {
     
-    private MyContext _context; // this holds reference to the context
+    private readonly MyContext _context; // this holds reference to the context
 
     public DonationRepo(MyContext context){
         _context = context;

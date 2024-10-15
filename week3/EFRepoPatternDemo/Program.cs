@@ -10,8 +10,8 @@ class Program
         //Create new context
         MyContext DBContext = new();
         //Create a new repository
-        UserRepo userRepo = new UserRepo(DBContext); // this is our interface to perform CRUD operations
-        DonationRepo donationRepo = new DonationRepo(DBContext);
+        UserRepo userRepo = new(DBContext); // this is our interface to perform CRUD operations
+        DonationRepo donationRepo = new(DBContext);
 
         userRepo.addUser(new User{ Name = "Vlada", Age = 105});
         userRepo.addUser(new User{ Name = "Kate", Age = 13});

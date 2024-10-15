@@ -6,7 +6,7 @@ namespace EFRepoPatternDemo.Data;
 
 public class UserRepo : IUserRepo{    
     
-    private MyContext _context; // this holds reference to the context
+    private readonly MyContext _context; // this holds reference to the context
 
     public UserRepo(MyContext context){
         _context = context;
