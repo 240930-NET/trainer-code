@@ -1,6 +1,7 @@
+using EFRepoPatternDemo.Models;
 
-using EFDemo.Models;
-namespace EFDemo;
+namespace EFRepoPatternDemo;
+
 //Provide all CRUD operations you need to
 public interface IUserRepo{
 

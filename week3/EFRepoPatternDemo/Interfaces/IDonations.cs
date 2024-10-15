@@ -1,5 +1,7 @@
-using EFDemo.Models;
-namespace EFDemo;
+using EFRepoPatternDemo.Models;
+
+namespace EFRepoPatternDemo;
+
 public interface IDonations{
 
     public string AddDonation(Donation donation);

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EFRepoPatternDemo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c94666a507a76ed75c99a0fcbcdd4ece82192848")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+397047953d8001cf660b88f11b9b7664917ff943")]
 [assembly: System.Reflection.AssemblyProductAttribute("EFRepoPatternDemo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EFRepoPatternDemo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

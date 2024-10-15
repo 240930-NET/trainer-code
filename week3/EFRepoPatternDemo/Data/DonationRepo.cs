@@ -1,38 +1,32 @@
-using Microsoft.EntityFrameworkCore;
-using EFDemo.Models;
-using EFDemo;
+using EFRepoPatternDemo.Models;
 
-namespace EFDemo.Data;
+namespace EFRepoPatternDemo.Data;
 
 public class DonationRepo : IDonations {
+    
+    private MyContext _context; // this holds reference to the context
 
+    public DonationRepo(MyContext context){
+        _context = context;
+    }
 
     public string AddDonation(Donation donation){
-        using(var context = new MyContext()){
-
-            context.Donations.Add(donation);
-            context.SaveChanges();
-            return "Donation added successfully";
-        }
+        _context.Donations.Add(donation);
+        _context.SaveChanges();
+        return "Donation added successfully";
     }
 
     public List<Donation> GetAllDonations(){
-        using(var context = new MyContext()){
-
-            return context.Donations.ToList();
-        }
+        return _context.Donations.ToList();
     }
 
     public string RemoveDonation(int id){
-        
-        using(var context = new MyContext()){
-            var donation = context.Donations.Find(id);
-            if(donation!=null){
-                context.Donations.Remove(donation);
-                context.SaveChanges();
-                return "Donation removed successfully";
-            }
-            return "Donation not found";
+        var donation = _context.Donations.Find(id);
+        if(donation!=null){
+            _context.Donations.Remove(donation);
+            _context.SaveChanges();
+            return "Donation removed successfully";
         }
+        return "Donation not found";
     }
 }

@@ -1,15 +1,13 @@
 using Microsoft.EntityFrameworkCore;
-using EFDemo.Models;
-using EFDemo;
+using EFRepoPatternDemo.Models;
 
-
-namespace EFDemo.Data;
+namespace EFRepoPatternDemo.Data;
 public class MyContext : DbContext {
     public DbSet<User> Users { get; set; } // define DBSet of user
     public DbSet<Donation> Donations { get; set; } // define DBSet of product
 
-    //public MyContext(DbContextOptions<MyContext> options) : base(options) {}
-    //public MyContext(){}
+    public MyContext(DbContextOptions<MyContext> options) : base(options) {}
+    public MyContext(){}
 
      protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {   

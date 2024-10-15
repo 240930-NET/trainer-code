@@ -1,4 +1,4 @@
-namespace EFDemo.Models;
+namespace EFRepoPatternDemo.Models;
 public class Donation{
     public int DonationId { get; set; } // Primary key
     public double Amount { get; set; }
