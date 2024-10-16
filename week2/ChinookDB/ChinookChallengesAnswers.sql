@@ -176,8 +176,10 @@ WHERE c.Country = 'Germany';
 
 -- 6. list the names and countries of the customers supported by an employee
 --    who was hired younger than 35.
-
-
+SELECT c.FirstName + ' ' + c.LastName AS 'Name', c.Country
+FROM Customer c
+INNER JOIN Employee e ON c.SupportRepId = e.EmployeeId
+WHERE DATEDIFF(YEAR, e.BirthDate, e.HireDate) < 35
 
 -- DML exercises
 
