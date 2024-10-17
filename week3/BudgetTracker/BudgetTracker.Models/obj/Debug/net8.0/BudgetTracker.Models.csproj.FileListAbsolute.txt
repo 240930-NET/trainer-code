@@ -1,0 +1,12 @@
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\bin\Debug\net8.0\BudgetTracker.Models.deps.json
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\bin\Debug\net8.0\BudgetTracker.Models.dll
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\bin\Debug\net8.0\BudgetTracker.Models.pdb
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\obj\Debug\net8.0\BudgetTracker.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\obj\Debug\net8.0\BudgetTracker.Models.AssemblyInfoInputs.cache
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\obj\Debug\net8.0\BudgetTracker.Models.AssemblyInfo.cs
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\obj\Debug\net8.0\BudgetTracker.Models.csproj.CoreCompileInputs.cache
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\obj\Debug\net8.0\BudgetTracker.Models.sourcelink.json
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\obj\Debug\net8.0\BudgetTracker.Models.dll
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\obj\Debug\net8.0\refint\BudgetTracker.Models.dll
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\obj\Debug\net8.0\BudgetTracker.Models.pdb
+C:\training\240930-NET\week3\BudgetTracker\BudgetTracker.Models\obj\Debug\net8.0\ref\BudgetTracker.Models.dll

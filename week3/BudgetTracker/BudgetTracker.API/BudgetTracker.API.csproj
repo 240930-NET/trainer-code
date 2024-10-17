@@ -1,14 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>bb228866-4bf8-4097-91c4-08da726843d2</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
+
+      <ItemGroup>
+      <ProjectReference Include="..\BudgetTracker.Models\BudgetTracker.Models.csproj" />
+      <ProjectReference Include="..\BudgetTracker.Data\BudgetTracker.Data.csproj" />
+      <ProjectReference Include="..\BudgetTracker.Tests\BudgetTracker.Tests.csproj" />
+
+
+    </ItemGroup>
 
 </Project>

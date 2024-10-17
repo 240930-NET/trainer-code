@@ -1,21 +1,17 @@
 ﻿namespace BudgetTracker.Models;
 
 public class Expense
-{
-    public string? Name {get; set; }
-    public double? Amount {get; set; }
-    public string? Description {get; set; }
+{   
+    public int ExpenseId { get; set; }
+    public string? ExpenseName {get; set; }
+    public double? ExpenseAmount {get; set; }
+    public string? ExpenseDescription {get; set; }
 
     public Expense(){
         
     }
-    public Expense(string name, double amount, string description){
-        Name = name;
-        Amount = amount;
-        Description = description;
-    }
 
     public void PrintExpenseDetails(){
-        Console.WriteLine($"Name: {Name}, Amount: {Amount}, Description: {Description}\n");
+        Console.WriteLine($"Name: {ExpenseName}, Amount: {ExpenseAmount}, Description: {ExpenseDescription}\n");
     }
 }
