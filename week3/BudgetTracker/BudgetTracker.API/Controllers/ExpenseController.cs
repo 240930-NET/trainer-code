@@ -37,6 +37,44 @@ public class ExpenseController : Controller{
         }
     }
 
+    // Route to add a new expese
+    [HttpPost("addNewExpense")]
+    public IActionResult AddNewExpense([FromBody] Expense expense){
+
+        try{
+            _expenseService.AddExpense(expense);
+            return Ok(expense);
+        }
+        catch(Exception e){
+            return BadRequest("Could not add expense");
+        }
+    }
+
+    //Route for editing
+    [HttpPut("editExpense")]
+    public IActionResult EditExpense([FromBody] Expense expense){
+
+        try{
+            _expenseService.EditExpense(expense);
+            return Ok(expense);
+        }
+        catch(Exception e){
+            return BadRequest("Could not edit expense");
+        }
+    }
+
+    //Route for deleting
+    [HttpDelete("deleteExpense/{id}")]
+    public IActionResult DeleteExpense(int id){
+
+        try{
+            _expenseService.DeleteExpense(id);
+            return Ok("Expense deleted");
+        }
+        catch(Exception e){
+            return BadRequest("Could not delete expense");
+        }
+    }
 
 
 

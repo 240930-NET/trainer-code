@@ -20,9 +20,21 @@ public class ExpenseRepo : IExpenseRepo{
         return _context.Expenses.Find(id);
     }
 
-    // Implement:
     // Add new expense
+    public void addExpense(Expense expense){
+
+        _context.Expenses.Add(expense);
+        _context.SaveChanges();
+    }
     // Update existing expense
+     public void updateExpense(Expense expense){
+        _context.Expenses.Update(expense);
+        _context.SaveChanges();
+     }
     // Delete expense
+    public void deleteExpense(Expense expense){
+        _context.Expenses.Remove(expense);
+        _context.SaveChanges();
+    }
 }
 

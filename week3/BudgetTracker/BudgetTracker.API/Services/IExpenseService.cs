@@ -11,4 +11,13 @@ public interface IExpenseService {
 
     // Get Expenses by Id
     public Expense GetExpenseById(int id);
+
+    // Add new Expense
+    public string AddExpense(Expense expense);
+
+    // Update Expense
+    public Expense EditExpense(Expense expense);
+
+    // Delete Expense
+    public string DeleteExpense(int id);
 }

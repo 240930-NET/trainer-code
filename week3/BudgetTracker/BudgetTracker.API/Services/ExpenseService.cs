@@ -37,4 +37,59 @@ public class ExpenseService : IExpenseService {
             return null;
         }
     }
+
+     // Add new Expense
+    public string AddExpense(Expense expense){
+
+        if(expense.ExpenseName != null && expense.ExpenseAmount > 0){
+            _expenseRepo.addExpense(expense);
+            return $"Expense ${expense.ExpenseName} added successfully!";
+        }
+        else{
+            throw new Exception("Invalid Expense. Please check name or amount!");
+        }
+    }
+
+    // Update Expense
+    public Expense EditExpense(Expense expense){
+
+        //Find our expense by Id
+        Expense searchedExpense = _expenseRepo.getExpenseById(expense.ExpenseId);
+        if(searchedExpense != null){
+             //Update it with new values 
+            if(expense.ExpenseName != null && expense.ExpenseAmount > 0 ){
+                searchedExpense.ExpenseName = expense.ExpenseName;
+                searchedExpense.ExpenseAmount = expense.ExpenseAmount;
+                searchedExpense.ExpenseDescription = expense.ExpenseDescription;
+
+                //Pass it to our Expense Repository
+                _expenseRepo.updateExpense(searchedExpense);
+                return searchedExpense;
+            }
+            else{
+                throw new Exception("Invalid Expense. Please check name or amount!");
+            }
+        }
+
+            throw new Exception("Invalid Expense. Does not exist.");
+       
+       
+    }
+
+    // Delete Expense
+    public string DeleteExpense(int id){
+
+        //Find by Id
+        Expense searchedExpense = _expenseRepo.getExpenseById(id);
+        //Validate 
+        if(searchedExpense != null){
+            //Delete
+            _expenseRepo.deleteExpense(searchedExpense);
+            return $"Expense with id {id} deleted successfully!";
+        }
+        else{
+            throw new Exception($"This expense with id {id} does not exist");
+        }
+
+    }
 }
