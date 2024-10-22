@@ -2,7 +2,7 @@ using BudgetTracker.Models;
 using BudgetTracker.Data;
 
 
-namespace BudgetTracker.API;
+namespace BudgetTracker.API.Service;
 
 public class UserService : IUserService {
 
@@ -41,9 +41,9 @@ public class UserService : IUserService {
     public async Task<User> AddNewUser(User user){
 
         //Little Validation
-        if(user.FirstName != ""){
-            await _userRepo.AddUser(user);
-            return user;
+        if(user.FirstName != ""){            
+            return await _userRepo.AddUser(user);
+            //return user;
         }
         else{
             throw new Exception("Invalid User. Please provide a first name!");

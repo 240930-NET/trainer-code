@@ -1,7 +1,7 @@
 using BudgetTracker.Data;
 using BudgetTracker.Models;
 
-namespace BudgetTracker.API;
+namespace BudgetTracker.API.Service;
 
 public interface IExpenseService {
 

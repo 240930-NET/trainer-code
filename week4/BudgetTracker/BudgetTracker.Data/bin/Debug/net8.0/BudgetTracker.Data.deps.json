@@ -1082,10 +1082,7 @@
       },
       "BudgetTracker.Models/1.0.0": {
         "runtime": {
-          "BudgetTracker.Models.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BudgetTracker.Models.dll": {}
         }
       }
     }

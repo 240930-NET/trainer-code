@@ -15,9 +15,6 @@
       <ItemGroup>
       <ProjectReference Include="..\BudgetTracker.Models\BudgetTracker.Models.csproj" />
       <ProjectReference Include="..\BudgetTracker.Data\BudgetTracker.Data.csproj" />
-      <ProjectReference Include="..\BudgetTracker.Tests\BudgetTracker.Tests.csproj" />
-
-
     </ItemGroup>
 
      <ItemGroup>

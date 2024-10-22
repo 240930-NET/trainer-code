@@ -1,7 +1,7 @@
 using BudgetTracker.Data;
 using BudgetTracker.Models;
 
-namespace BudgetTracker.API;
+namespace BudgetTracker.API.Service;
 
 public class ExpenseService : IExpenseService {
 
@@ -16,7 +16,7 @@ public class ExpenseService : IExpenseService {
       // Get add Expenses 
     public List<Expense> GetAllExpenses(){
 
-        List<Expense> result = _expenseRepo.getAllExpenses();
+        List<Expense> result = _expenseRepo.GetAllExpenses();
         if(result.Count == 0){
             return null;
         }

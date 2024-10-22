@@ -10,7 +10,6 @@
         "dependencies": {
           "BudgetTracker.Data": "1.0.0",
           "BudgetTracker.Models": "1.0.0",
-          "BudgetTracker.Tests": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.10",
           "Microsoft.EntityFrameworkCore.Design": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10",
@@ -1123,26 +1122,12 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.10"
         },
         "runtime": {
-          "BudgetTracker.Data.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BudgetTracker.Data.dll": {}
         }
       },
       "BudgetTracker.Models/1.0.0": {
         "runtime": {
-          "BudgetTracker.Models.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "BudgetTracker.Tests/1.0.0": {
-        "runtime": {
-          "BudgetTracker.Tests.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BudgetTracker.Models.dll": {}
         }
       }
     }
@@ -1782,11 +1767,6 @@
       "sha512": ""
     },
     "BudgetTracker.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "BudgetTracker.Tests/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

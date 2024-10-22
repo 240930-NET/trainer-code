@@ -2,8 +2,7 @@ using BudgetTracker.Models;
 using BudgetTracker.Data;
 
 
-namespace BudgetTracker.API;
-
+namespace BudgetTracker.API.Service;
 public interface IUserService{
 
     //Get 
