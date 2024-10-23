@@ -4,85 +4,55 @@ using BudgetTracker.Data;
 
 namespace BudgetTracker.API.Service;
 
-public class UserService : IUserService {
+public class UserService : IUserService{
 
     private readonly IUserRepo _userRepo;
 
-    //Add constructor here
     public UserService(IUserRepo userRepo){
         _userRepo = userRepo;
     }
 
-    //Get 
-    public async Task<List<User>> GetAllUsers(){
-
-        List<User> users =  await _userRepo.GetAllUsers();
-
-        if(users.Count == 0){
-            throw new Exception("No users were found");
+    public async Task<User> GetUserById(int id){
+        User searchedUser =  await _userRepo.GetUserById(id);
+        if( searchedUser == null){
+            throw new Exception($"No user found with id {id}");
         }
         else{
-            return users;
+            return searchedUser;
         }
     }
+    public async Task<List<User>> GetAddUsers(){
+        List<User> allUsers = await _userRepo.GetAllUsers();
+        if(allUsers.Count == 0){
+            throw new Exception("No users found");
+        }
+        return allUsers;
+    }
+    public Task<User> AddUser(User user){
 
-    //Get by Id
-    public async Task<User> GetUserById(int id){
+        if(user.FirstName == null){
+            throw new Exception("First Name is required");
+        }
+        else{
+            return _userRepo.AddUser(user);
+        }
+ 
+    }
+    public async Task<User> UpdateUser(User user){
+        if(await _userRepo.GetUserById(user.UserId) == null || user.FirstName == null){
+            throw new Exception($"Invalid input!");
+        }
+        else{
+            return await _userRepo.UpdateUser(user);
+        }
+    }
+    public async Task DeleteUser(int id){
         User searchedUser = await _userRepo.GetUserById(id);
         if(searchedUser == null){
-            throw new Exception("User not found");
+            throw new Exception($"Invalid input!");
         }
         else{
-            return searchedUser;
-        }
-    }
-
-    //Add
-    public async Task<User> AddNewUser(User user){
-
-        //Little Validation
-        if(user.FirstName != ""){            
-            return await _userRepo.AddUser(user);
-            //return user;
-        }
-        else{
-            throw new Exception("Invalid User. Please provide a first name!");
-        }
-    
-    
-    }
-
-    //Update
-    public async Task<User> UpdateUser(User user){
-        //Check if user already exists
-        User searchedUser = await _userRepo.GetUserById(user.UserId); // find if user already exists
-
-        if(searchedUser != null){
-            if(user.FirstName != ""){
-                await _userRepo.UpdateUser(user);
-                return user;
-            }
-            else{
-                throw new Exception("First name is required!");
-            }
-           
-        }
-        else{
-            throw new Exception("User not found");
-        }
-    }
-
-    //Delete
-    public async Task<User> DeleteUser(int id){
-
-        User searchedUser = await _userRepo.GetUserById(id);
-
-        if(searchedUser != null){
-            await _userRepo.deleteUserById(searchedUser);
-            return searchedUser;
-        }
-        else{
-            throw new Exception("User not found. Cannot delete it!");
+         await _userRepo.UpdateUser(searchedUser);
         }
     }
 }

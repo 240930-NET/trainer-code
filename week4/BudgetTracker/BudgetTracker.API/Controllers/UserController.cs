@@ -1,36 +1,80 @@
-using BudgetTracker.API.Service;
-using BudgetTracker.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
+using BudgetTracker.Models;
+using BudgetTracker.API.Service;
 
-namespace BudgetTracker.API;
+
+namespace ExpenseTracker.API;
 
 [ApiController]
-[Route("/api/[controller]")]
-public class UserController : Controller{
-
-    private readonly IUserService _userService; // dependency injection
+[Route("api/[controller]")]
+public class UserController: Controller{
+     private readonly IUserService _userService;
 
     public UserController(IUserService userService){
         _userService = userService;
     }
 
-    //Get all users endpoint
+    //Get all expenses
     [HttpGet]
-    public async Task<ActionResult> GetAllUsers(){
-
+    public async Task<IActionResult> getAllUsers(){ //IActionResult return a certait type of response (views, json etc)
+        
         try{
-           return Ok(await _userService.GetAllUsers());
+            return Ok(await _userService.GetAddUsers());
         }
-        catch(Exception ex){
-            return StatusCode(500, ex.Message); // return server error with the error message
+        catch(Exception e){
+            return BadRequest(e.Message);
+        }
+        
+    }
+
+    [HttpGet("GetUserById/{id}")]
+    public async Task<IActionResult> getById(int id){ //IActionResult return a certait type of response (views, json etc)
+        
+        try{
+            return Ok(await _userService.GetUserById(id));
+        }
+        catch(Exception e){
+            return BadRequest(e.Message);
+        }
+        
+    }
+
+    //Add a new expense
+    [HttpPost("AddNewUser")]
+    public async Task<IActionResult> AddNewUser([FromBody] User user){
+        
+        try{
+            await _userService.AddUser(user);
+            return Ok(user);
+        }
+        catch(Exception e){
+            return BadRequest(e.Message);
         }
     }
-    //Add new
+    //Edit an existing expense
+    [HttpPut("EditUser")]
+    public async Task<IActionResult> EditExpense([FromBody] User user){
+        try{
+            await _userService.UpdateUser(user);
+            return Ok(user);
+        }
 
-    //Get by Id
+        catch(Exception e){
+            return BadRequest(e.Message);
+        }
+    }
 
-    //Update
+    //Delete an expense
+    [HttpDelete("DeleteUser/{id}")]
+    public async Task<IActionResult> DeleteExpense(int id){
+        try{    
+            await _userService.DeleteUser(id);
+            return Ok();
+        }
 
-    //Delete
+        catch(Exception e){
+            return BadRequest(e.Message);
+        }
+    }
+
 }
