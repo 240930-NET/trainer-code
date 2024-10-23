@@ -3,6 +3,7 @@ using BudgetTracker.Data;
 using BudgetTracker.Models;
 using BudgetTracker.API;
 using BudgetTracker.API.Service;
+using BudgetTracker.API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,8 @@ builder.Services.AddScoped<IExpenseService, ExpenseService>();
 builder.Services.AddScoped<IUserRepo, UserRepo>();
 builder.Services.AddScoped<IUserService, UserService>();
 
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
 builder.Services.AddControllers(); // Configure services to use controllers
 var app = builder.Build();
 
@@ -37,15 +40,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapGet("/", () => "Hello!");
+app.UseHttpsRedirection();
 
 //To make .NET see your controllers
 app.UseRouting();
 
 
 // Make your app to use it (Map it)
-app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapControllers(); // Maps attribute-routed controllers
-    });
+app.MapControllers();
+// app.UseEndpoints(endpoints =>
+//     {
+//         endpoints.MapControllers(); // Maps attribute-routed controllers
+//     });
 
 app.Run();

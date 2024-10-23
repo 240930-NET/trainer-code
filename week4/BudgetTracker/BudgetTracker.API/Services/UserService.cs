@@ -1,5 +1,7 @@
 using BudgetTracker.Models;
 using BudgetTracker.Data;
+using BudgetTracker.API.Models.DTO;
+using AutoMapper;
 
 
 namespace BudgetTracker.API.Service;
@@ -7,9 +9,11 @@ namespace BudgetTracker.API.Service;
 public class UserService : IUserService{
 
     private readonly IUserRepo _userRepo;
+    private readonly IMapper _mapper;
 
-    public UserService(IUserRepo userRepo){
+    public UserService(IUserRepo userRepo, IMapper mapper){
         _userRepo = userRepo;
+        _mapper = mapper;
     }
 
     public async Task<User> GetUserById(int id){
@@ -28,7 +32,16 @@ public class UserService : IUserService{
         }
         return allUsers;
     }
-    public Task<User> AddUser(User user){
+    public Task<User> AddUser(NewUserDTO userDTO){
+
+        //Convert from NewUserDTO to User
+        // User user = new()
+        // {
+        //     FirstName = userDTO.FirstName,
+        //     LastName = userDTO.LastName
+        // };
+
+        var user = _mapper.Map<User>(userDTO);
 
         if(user.FirstName == null){
             throw new Exception("First Name is required");

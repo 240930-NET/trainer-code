@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
@@ -1786,26 +1802,34 @@
       "BudgetTracker.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1"
+        },
         "compile": {
           "bin/placeholder/BudgetTracker.Models.dll": {}
         },
         "runtime": {
           "bin/placeholder/BudgetTracker.Models.dll": {}
-        }
-      },
-      "BudgetTracker.Tests/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/BudgetTracker.Tests.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BudgetTracker.Tests.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.35.0": {
       "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
       "type": "package",
@@ -4821,18 +4845,13 @@
       "type": "project",
       "path": "../BudgetTracker.Models/BudgetTracker.Models.csproj",
       "msbuildProject": "../BudgetTracker.Models/BudgetTracker.Models.csproj"
-    },
-    "BudgetTracker.Tests/1.0.0": {
-      "type": "project",
-      "path": "../BudgetTracker.Tests/BudgetTracker.Tests.csproj",
-      "msbuildProject": "../BudgetTracker.Tests/BudgetTracker.Tests.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AutoMapper >= 13.0.1",
       "BudgetTracker.Data >= 1.0.0",
       "BudgetTracker.Models >= 1.0.0",
-      "BudgetTracker.Tests >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
@@ -4841,41 +4860,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\UladaHaranina\\.nuget\\packages\\": {}
+    "C:\\Users\\KungLo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\training\\240930-NET\\week4\\BudgetTracker\\BudgetTracker.API\\BudgetTracker.API.csproj",
+      "projectUniqueName": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week4\\BudgetTracker\\BudgetTracker.API\\BudgetTracker.API.csproj",
       "projectName": "BudgetTracker.API",
-      "projectPath": "C:\\training\\240930-NET\\week4\\BudgetTracker\\BudgetTracker.API\\BudgetTracker.API.csproj",
-      "packagesPath": "C:\\Users\\UladaHaranina\\.nuget\\packages\\",
-      "outputPath": "C:\\training\\240930-NET\\week4\\BudgetTracker\\BudgetTracker.API\\obj\\",
+      "projectPath": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week4\\BudgetTracker\\BudgetTracker.API\\BudgetTracker.API.csproj",
+      "packagesPath": "C:\\Users\\KungLo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week4\\BudgetTracker\\BudgetTracker.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\UladaHaranina\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\KungLo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\training\\240930-NET\\week4\\BudgetTracker\\BudgetTracker.Data\\BudgetTracker.Data.csproj": {
-              "projectPath": "C:\\training\\240930-NET\\week4\\BudgetTracker\\BudgetTracker.Data\\BudgetTracker.Data.csproj"
+            "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week4\\BudgetTracker\\BudgetTracker.Data\\BudgetTracker.Data.csproj": {
+              "projectPath": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week4\\BudgetTracker\\BudgetTracker.Data\\BudgetTracker.Data.csproj"
             },
-            "C:\\training\\240930-NET\\week4\\BudgetTracker\\BudgetTracker.Models\\BudgetTracker.Models.csproj": {
-              "projectPath": "C:\\training\\240930-NET\\week4\\BudgetTracker\\BudgetTracker.Models\\BudgetTracker.Models.csproj"
-            },
-            "C:\\training\\240930-NET\\week4\\BudgetTracker\\BudgetTracker.Tests\\BudgetTracker.Tests.csproj": {
-              "projectPath": "C:\\training\\240930-NET\\week4\\BudgetTracker\\BudgetTracker.Tests\\BudgetTracker.Tests.csproj"
+            "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week4\\BudgetTracker\\BudgetTracker.Models\\BudgetTracker.Models.csproj": {
+              "projectPath": "C:\\Users\\KungLo\\Desktop\\Revature\\Cohorts\\240930-NET\\trainer-code\\week4\\BudgetTracker\\BudgetTracker.Models\\BudgetTracker.Models.csproj"
             }
           }
         }
@@ -4895,6 +4908,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[8.0.10, )"
@@ -4937,7 +4954,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

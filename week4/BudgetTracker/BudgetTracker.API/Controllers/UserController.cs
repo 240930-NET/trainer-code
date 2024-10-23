@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using BudgetTracker.Models;
 using BudgetTracker.API.Service;
+using BudgetTracker.API.Models.DTO;
 
 
 namespace ExpenseTracker.API;
@@ -41,7 +42,7 @@ public class UserController: Controller{
 
     //Add a new expense
     [HttpPost("AddNewUser")]
-    public async Task<IActionResult> AddNewUser([FromBody] User user){
+    public async Task<IActionResult> AddNewUser([FromBody] NewUserDTO user){
         
         try{
             await _userService.AddUser(user);
