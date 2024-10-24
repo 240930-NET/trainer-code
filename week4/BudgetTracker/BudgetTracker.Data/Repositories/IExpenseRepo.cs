@@ -6,7 +6,7 @@ public interface IExpenseRepo {
 
     //For now two methods
 
-    public List<Expense> getAllExpenses();
+    public List<Expense> GetAllExpenses();
     public Expense getExpenseById(int id);
 
     //Add expense

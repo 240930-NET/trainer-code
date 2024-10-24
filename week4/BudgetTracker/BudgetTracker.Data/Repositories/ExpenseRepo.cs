@@ -13,7 +13,7 @@ public class ExpenseRepo : IExpenseRepo{
     }
 
     //CRUD methods
-    public List<Expense> getAllExpenses(){
+    public List<Expense> GetAllExpenses(){
         return _context.Expenses.ToList();
     }
     public Expense getExpenseById(int id){
@@ -27,10 +27,10 @@ public class ExpenseRepo : IExpenseRepo{
         _context.SaveChanges();
     }
     // Update existing expense
-     public void updateExpense(Expense expense){
+    public void updateExpense(Expense expense){
         _context.Expenses.Update(expense);
         _context.SaveChanges();
-     }
+    }
     // Delete expense
     public void deleteExpense(Expense expense){
         _context.Expenses.Remove(expense);

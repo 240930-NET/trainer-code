@@ -1,73 +1,81 @@
-using BudgetTracker.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
+using BudgetTracker.Models;
+using BudgetTracker.API.Service;
+using BudgetTracker.API.Models.DTO;
 
-namespace BudgetTracker.API;
+
+namespace ExpenseTracker.API;
 
 [ApiController]
-[Route("/api/[controller]")]
-public class UserController : Controller{
-
-    private readonly IUserService _userService; // dependency injection
+[Route("api/[controller]")]
+public class UserController: Controller{
+     private readonly IUserService _userService;
 
     public UserController(IUserService userService){
         _userService = userService;
     }
 
-    //Get all users endpoint
+    //Get all expenses
     [HttpGet]
-    public async Task<ActionResult> GetAllUsers(){
-
+    public async Task<IActionResult> getAllUsers(){ //IActionResult return a certait type of response (views, json etc)
+        
         try{
-           return Ok(await _userService.GetAllUsers());
+            return Ok(await _userService.GetAddUsers());
         }
-        catch(Exception ex){
-            return StatusCode(500, ex.Message); // return server error with the error message
+        catch(Exception e){
+            return BadRequest(e.Message);
         }
+        
     }
-      //Get by Id
-    [HttpGet("getById/{id}")]
-    public async Task<ActionResult> GetUserByUserId(int id){
+
+    [HttpGet("GetUserById/{id}")]
+    public async Task<IActionResult> getById(int id){ //IActionResult return a certait type of response (views, json etc)
+        
         try{
             return Ok(await _userService.GetUserById(id));
         }
-        catch(Exception ex){
-            return StatusCode(500, ex.Message); // return server error with the error message
+        catch(Exception e){
+            return BadRequest(e.Message);
         }
+        
     }
 
-    //Add new
-    [HttpPost("addNewUser")]
-    [ProducesResponseType(StatusCodes.Status201Created)] // data annotation to send status code
-
-    public async Task<ActionResult> AddNewUser([FromBody] User user){
+    //Add a new expense
+    [HttpPost("AddNewUser")]
+    public async Task<IActionResult> AddNewUser([FromBody] NewUserDTO user){
+        
         try{
-           return Json( await _userService.AddNewUser(user));
+            await _userService.AddUser(user);
+            return Ok(user);
         }
-        catch(Exception ex){
-            return StatusCode(500, ex.Message);
+        catch(Exception e){
+            return BadRequest(e.Message);
+        }
+    }
+    //Edit an existing expense
+    [HttpPut("EditUser")]
+    public async Task<IActionResult> EditExpense([FromBody] User user){
+        try{
+            await _userService.UpdateUser(user);
+            return Ok(user);
+        }
+
+        catch(Exception e){
+            return BadRequest(e.Message);
         }
     }
 
-    //Update
-    [HttpPut("UpdateUser")]
-    public async Task<ActionResult> UpdateUser([FromBody] User user){
-        try{
-            return Ok(await _userService.UpdateUser(user));
+    //Delete an expense
+    [HttpDelete("DeleteUser/{id}")]
+    public async Task<IActionResult> DeleteExpense(int id){
+        try{    
+            await _userService.DeleteUser(id);
+            return Ok();
         }
-        catch(Exception ex){
-            return StatusCode(500, ex.Message);
+
+        catch(Exception e){
+            return BadRequest(e.Message);
         }
     }
 
-    //Delete
-    [HttpDelete("deleteUser/{id}")]
-    public async Task<ActionResult> DeleteUser(int id){
-        try{
-            return Ok(await _userService.DeleteUser(id));
-        }
-        catch(Exception ex){
-            return StatusCode(500, ex.Message);
-        }
-    }
 }

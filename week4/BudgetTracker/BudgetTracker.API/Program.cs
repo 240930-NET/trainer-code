@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using BudgetTracker.Data;
 using BudgetTracker.Models;
 using BudgetTracker.API;
+using BudgetTracker.API.Service;
+using BudgetTracker.API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +15,7 @@ builder.Services.AddSwaggerGen();
 //Configure our DBContext and Repos here
 
 // retrieve connection string from user secrets
-string connectionString = builder.Configuration["ConnectionString"]; 
+string connectionString = builder.Configuration["ConnectionStrings:Expenses"]; 
 //set up DbContext
 builder.Services.AddDbContext<BudgetContext>(options => options.UseSqlServer(connectionString));
 
@@ -23,6 +25,8 @@ builder.Services.AddScoped<IExpenseService, ExpenseService>();
 
 builder.Services.AddScoped<IUserRepo, UserRepo>();
 builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddControllers(); // Configure services to use controllers
 var app = builder.Build();
@@ -36,15 +40,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapGet("/", () => "Hello!");
+app.UseHttpsRedirection();
 
 //To make .NET see your controllers
 app.UseRouting();
 
 
 // Make your app to use it (Map it)
-app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapControllers(); // Maps attribute-routed controllers
-    });
+app.MapControllers();
+// app.UseEndpoints(endpoints =>
+//     {
+//         endpoints.MapControllers(); // Maps attribute-routed controllers
+//     });
 
 app.Run();
