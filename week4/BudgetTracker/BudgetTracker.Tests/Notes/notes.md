@@ -12,7 +12,12 @@ dotnet tool install -g dotnet-reportgenerator-globaltool
 dotnet test --collect:"XPlat Code Coverage"
 ```
 
-## Find guid inside test result folder and run to generate html report
+## Find guid inside TestResults folder and replace {guid} in command then run to generate html report
+```bash
+reportgenerator -reports:".\TestResults\{guid}\coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
+```
+
+## Same command as above but with classfilters to get rid of stuff not tested
 ```bash
 reportgenerator -reports:".\TestResults\{guid}\coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html -classfilters:"+{serviceName}.Service.*;+{utilities}.API.Utilities.*"
 ```
