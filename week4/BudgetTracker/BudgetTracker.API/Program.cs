@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 //Configure our DBContext and Repos here
 
 // retrieve connection string from user secrets
-string connectionString = builder.Configuration["ConnectionStrings:Expenses"]; 
+string connectionString = builder.Configuration["ConnectionString"]; 
 //set up DbContext
 builder.Services.AddDbContext<BudgetContext>(options => options.UseSqlServer(connectionString));
 
