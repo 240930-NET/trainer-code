@@ -39,7 +39,7 @@ public class ExpenseController : Controller{
     }
 
     // Route to add a new expese
-    [HttpPost("addNewExpense")]
+    [HttpPost]
     public IActionResult AddNewExpense([FromBody] Expense expense){
 
         try{
