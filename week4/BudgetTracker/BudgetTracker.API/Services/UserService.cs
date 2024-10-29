@@ -25,7 +25,7 @@ public class UserService : IUserService{
             return searchedUser;
         }
     }
-    public async Task<List<User>> GetAddUsers(){
+    public async Task<List<User>> GetAllUsers(){
         List<User> allUsers = await _userRepo.GetAllUsers();
         if(allUsers.Count == 0){
             throw new Exception("No users found");

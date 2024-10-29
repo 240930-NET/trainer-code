@@ -1,3 +1,5 @@
+using AutoMapper;
+using BudgetTracker.API.Models.DTO;
 using BudgetTracker.API.Service;
 using BudgetTracker.Data;
 using BudgetTracker.Models;
@@ -13,7 +15,8 @@ public class UserServiceTests
     {
         //Arrange
         Mock<IUserRepo> mockRepo = new();
-        UserService userService = new(mockRepo.Object);
+        Mock<IMapper> mockMapper = new();
+        UserService userService = new(mockRepo.Object, mockMapper.Object);
 
         List<User> uList = [];
 
@@ -32,7 +35,8 @@ public class UserServiceTests
     {
         //Arrange
         Mock<IUserRepo> mockRepo = new();
-        UserService userService = new(mockRepo.Object);
+        Mock<IMapper> mockMapper = new();
+        UserService userService = new(mockRepo.Object, mockMapper.Object);
 
         List<User> uList = [
             new User {FirstName = "Coffee"},
@@ -60,7 +64,8 @@ public class UserServiceTests
     {
         //Arrange
         Mock<IUserRepo> mockRepo = new();
-        UserService userService = new(mockRepo.Object);
+        Mock<IMapper> mockMapper = new();
+        UserService userService = new(mockRepo.Object, mockMapper.Object);
 
         List<User> uList = [
             new User {FirstName = "Coffee", UserId = 1},
@@ -85,7 +90,8 @@ public class UserServiceTests
     {
         //Arrange
         Mock<IUserRepo> mockRepo = new();
-        UserService userService = new(mockRepo.Object);
+        Mock<IMapper> mockMapper = new();
+        UserService userService = new(mockRepo.Object, mockMapper.Object);
 
         List<User> uList = [
             new User {FirstName = "Coffee", UserId = 1},
@@ -94,13 +100,14 @@ public class UserServiceTests
         ];
 
         User newUser = new(){ FirstName = "Coffee4", UserId = 4};
+        NewUserDTO newUserDTO = new(){FirstName = "Coffee5", LastName = "IceCream"};
 
         mockRepo.Setup(repo => repo.AddUser(It.IsAny<User>()))
         .Callback(() => uList.Add(newUser))
         .ReturnsAsync(newUser);
 
         //Act
-        var result = await userService.AddNewUser(newUser);
+        var result = await userService.AddUser(newUserDTO);
 
         //Assert
         Assert.NotNull(result);

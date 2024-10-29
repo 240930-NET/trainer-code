@@ -20,7 +20,7 @@ public class UserController: Controller{
     public async Task<IActionResult> getAllUsers(){ //IActionResult return a certait type of response (views, json etc)
         
         try{
-            return Ok(await _userService.GetAddUsers());
+            return Ok(await _userService.GetAllUsers());
         }
         catch(Exception e){
             return BadRequest(e.Message);
