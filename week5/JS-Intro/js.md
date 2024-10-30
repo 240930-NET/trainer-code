@@ -63,7 +63,7 @@ This is how javascript is primarily used in the web page.
 - e.stopPropagation() will stop this bubble/capture process
 
 ### Async Javascript
-Important because fe is nothing w/o data and we get that data via http call, asynchronously.
+Important because frontend is nothing w/o data and we get that data via http call, asynchronously.
 
 #### Fetch API
 - native js way to send http calls
