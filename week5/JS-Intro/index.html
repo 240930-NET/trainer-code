@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!--Tell our browser to treat this page as html type-->
+<html lang="en">  <!--What language is our doc-->
+<head> <!--Contains all metadata (we link our styles here, or some additional icons, or fonts)-->
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="./style.css"> <!--Add our external style.css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Device width and height-->
+    <title>Portfolio</title>
+</head>
+
+<!--Internal style-->
+<style>
+    /*To select an element, we use the tag or id or class name*/
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    /*Refer to element with Id*/
+    #first-ul-item{
+        color:plum;
+    }
+
+     /*Refer to element with class*/
+    .ul-item{
+        color:chocolate;
+        font-size:1.4em; /*1 em is ~ 16px*/
+    }
+
+</style>
+
+<body>
+    <!--Here you put everything you want your user to see!-->
+    <h1>Hello World!</h1>
+    <h2>Heading 2</h2> <!-- Element inside <> is called tag -->
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <div onclick="clickHandler(event, 'div')">
+        <button onclick="clickHandler()">Button1</button>
+        <button onclick="clickHandler(event, 'button')">Button2</button>
+        <button onclick="newCat()">Button3</button>
+
+
+        <button id="button4">Button4</button>
+
+        
+    </div>
+
+    <p><strong>This is my first webpage!</strong></p>
+    <p><em>This is my first webpage 2.0!</em></p>
+
+    <ul onclick="clickHandler(event, 'ul')" style="border: solid red;">
+        <li onclick="clickHandler(event, 'list-item')" id="first-ul-item">Item 1</li>
+        <li class="ul-item">Item 2</li>
+        <li class="ul-item">Item 3</li>
+    </ul>
+
+    <ol>
+        <li class="ul-item">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <header>
+        <div>
+            <h3>My Logo</h3>
+            <div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>  
+    <!--Semantic tags-->
+
+    <header></header> <!-- For our top website part, that holds navigation and etc -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav> 
+    <section></section>
+    <article></article>
+    <footer></footer> 
+
+    <!--Attributes: provides additional info about your tag-->
+    <!--scr, alt, id, class - they are all Attributes-->
+    <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg" alt="blue british cat" id="myImage" class="catImages"/>
+    <audio></audio>
+    <video></video>
+
+    <!--Inline and Block elements-->
+
+    <!--Block: p, div,section, ul, ol, header, etc-->
+
+    <!-- Inline css: we use style attribute to style our element-->
+    <p style="border:2px solid red;">I am a block element</p>
+    <span  style="border:2px solid rgb(4, 248, 69);">I am inline elements</span>
+
+    <script src="./index.js"></script>
+</body>
+</html>
