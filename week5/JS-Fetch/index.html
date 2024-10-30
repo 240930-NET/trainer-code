@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Expenses</title>
+</head>
+<body>
+    <!-- <form onsubmit="addPoke(event)" id="addPokeForm"> -->
+    <form id="addUserForm">
+        <label for="firstname">First Name</label>               
+        <input type="text" name="firstname" id="firstname" required>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" required>
+
+        <input type="submit" value="Add User">
+    </form>
+
+    <form id="addExpenseForm">
+        <label for="expenseName">Name</label>               
+        <input type="text" name="expenseName" id="expenseName" required>
+
+        <label for="amount">Amount</label>               
+        <input type="number" name="amount" id="amount" required>
+
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description" required>
+
+        <label for="userId">User Id</label>
+        <input type="number" name="userId" id="userId">
+
+        <input type="submit" value="Add Expense to User">
+    </form>
+
+
+    <br>
+    <br>    
+    <button onclick="getAllExpenseHandler()">Get All Expenses</button>    
+    <button onclick="getAllUserHandler()">Get All Users</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
