@@ -51,4 +51,28 @@ userForm.addEventListener('submit', function(event) {
     })
     .then(res => console.log(res))
     .then(resJson => console.log(resJson))
-})
+});
+
+const expenseForm = document.getElementById('addExpenseForm');
+
+expenseForm.addEventListener('submit', function(e)
+{
+    e.preventDefault();
+
+    const expense = {
+        "expenseId": 0,
+        "expenseName": e.target.elements['expenseName'].value,
+        "expenseAmount": e.target.elements['amount'].value,
+        "expenseDescription": e.target.elements['description'].value,
+        "userId": e.target.elements['userId'].value
+    }
+
+    fetch('http://localhost:5222/api/Expense', {
+        method: 'POST',
+        body: JSON.stringify(expense),
+        headers: {
+            'Content-Type' : 'application/json'
+        }
+    })
+    .then(res => console.log(res))
+});
