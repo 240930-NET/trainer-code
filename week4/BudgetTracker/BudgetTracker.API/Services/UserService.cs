@@ -65,7 +65,7 @@ public class UserService : IUserService{
             throw new Exception($"Invalid input!");
         }
         else{
-         await _userRepo.UpdateUser(searchedUser);
+         await _userRepo.deleteUserById(searchedUser);
         }
     }
 }

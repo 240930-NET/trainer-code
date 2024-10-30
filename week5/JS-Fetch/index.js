@@ -55,10 +55,31 @@ userForm.addEventListener('submit', function(event) {
 
 const expenseForm = document.getElementById('addExpenseForm');
 
-expenseForm.addEventListener('submit', function(e)
+// expenseForm.addEventListener('submit', function(e)
+// {
+//     e.preventDefault();
+
+//     const expense = {
+//         "expenseId": 0,
+//         "expenseName": e.target.elements['expenseName'].value,
+//         "expenseAmount": e.target.elements['amount'].value,
+//         "expenseDescription": e.target.elements['description'].value,
+//         "userId": e.target.elements['userId'].value
+//     }
+
+//     fetch('http://localhost:5222/api/Expense', {
+//         method: 'POST',
+//         body: JSON.stringify(expense),
+//         headers: {
+//             'Content-Type' : 'application/json'
+//         }
+//     })
+//     .then(res => console.log(res))
+// });
+
+function addExpenses(e)
 {
     e.preventDefault();
-
     const expense = {
         "expenseId": 0,
         "expenseName": e.target.elements['expenseName'].value,
@@ -75,4 +96,4 @@ expenseForm.addEventListener('submit', function(e)
         }
     })
     .then(res => console.log(res))
-});
+}

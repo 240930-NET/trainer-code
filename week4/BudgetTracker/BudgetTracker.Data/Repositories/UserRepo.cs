@@ -12,7 +12,7 @@ public class UserRepo : IUserRepo{
     }
 
     public async Task<List<User>> GetAllUsers(){
-        return await _context.Users.ToListAsync();
+        return await _context.Users.Include(u => u.Expenses).ToListAsync();
     }
     public async Task<User> GetUserById(int id){
         return await _context.Users.Include(u => u.Expenses).FirstOrDefaultAsync(u => u.UserId == id); // user will be loaded with expenses
