@@ -1,0 +1,22 @@
+form{
+    display: flex;
+    gap: 0 10px;
+    
+}
+
+form label{
+    display: block;
+}
+
+#ouput_container h1{
+
+    font-size: 1.2em;
+    text-align: left;
+    margin-top: 5em;
+}
+
+#ouput_container h4{
+    text-align: left;
+    font-weight: 400;
+    margin: 0.4em;
+}
