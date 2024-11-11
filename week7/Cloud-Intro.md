@@ -24,10 +24,10 @@
 ## SLA (service level agreement)
 - Cloud Service Provider guarantees a certain amount of uptime
 - 100% does not exist, things will go down, hardware will fail
-- 99% (Dev) 3.6day/yr
-- 99.9% (Prod) 9hr/yr
-- 99.99% (Prod) 52min/yr
-- 99.999% (mission critical) 5min/yr
+- 99% (Dev) 3.65 days/yr
+- 99.9% (Prod) 8.76 hr/yr
+- 99.99% (Prod) 52.56 min/yr
+- 99.999% (mission critical) 5.256 min/yr
 
 ## Region / Availability Zone
 - Regions (Physical locations/ geographies): US East Coast, West Coast, Central, etc
