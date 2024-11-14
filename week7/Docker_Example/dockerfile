@@ -17,6 +17,9 @@ RUN dotnet publish BudgetTracker.API -c Release -o dist
 # Make new layer
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS run
 
+# Ask aspnet to serve over port 80... please
+ENV ASPNETCORE_URLS=http://*:80
+
 # Set working dir to /app
 WORKDIR /app
 
