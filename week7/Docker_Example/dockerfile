@@ -1,0 +1,37 @@
+# Dockerfile - Provide instructions to build our application and run it.
+
+# Start with a .NET 8 SDK on existing OS
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
+# Set working dir to /app
+WORKDIR /app
+
+# Copy over our source code
+COPY BudgetTracker.API /app/BudgetTracker.API 
+COPY BudgetTracker.Data /app/BudgetTracker.Data 
+COPY BudgetTracker.Models /app/BudgetTracker.Models
+
+# Run dotnet publish and make artifact
+RUN dotnet publish BudgetTracker.API -c Release -o dist
+
+# Make new layer
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS run
+
+# Set working dir to /app
+WORKDIR /app
+
+# Copy over artifact from build layer
+COPY --from=build /app/dist .
+
+# What to do when docker run is called
+# Run dotnet BudgetTracker.API.dll when docker run is executed
+CMD ["dotnet", "BudgetTracker.API.dll"]
+
+# To build image run:
+# docker build -t account/image-name:0.0.1
+
+# To run image:
+# -d detached mode, frees terminal back to you
+# -p to map inner ports to outter ports
+# -e Any enviroment varibles you want to provide
+# docker run -d -p hosePort:Container_port -e "ConnectionString" image-name
