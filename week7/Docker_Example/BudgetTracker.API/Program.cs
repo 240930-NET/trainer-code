@@ -7,13 +7,13 @@ using BudgetTracker.API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddCors(co => {
-    co.AddPolicy("name" , pb =>{
-        pb.WithOrigins("*")
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-    });
-});
+// builder.Services.AddCors(co => {
+//     co.AddPolicy("name" , pb =>{
+//         pb.WithOrigins("*")
+//             .AllowAnyHeader()
+//             .AllowAnyMethod();
+//     });
+// });
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -48,7 +48,7 @@ if (app.Environment.IsDevelopment())
 
 //app.MapGet("/", () => builder.Configuration["myenv"]);
 app.MapGet("/", () => "Hello");
-app.UseCors("name");
+// app.UseCors("name");
 app.UseHttpsRedirection();
 
 //To make .NET see your controllers
