@@ -7,10 +7,12 @@
 - *As of now AI's that use LLM's will "generate" answers to prompts, that means they are simply using pattern matching to answer you. So while it seems that AI's have context, that context is very limited and this is why AI's often "hallucinate" or give false information.
 
 ## What are some AI tools developers can use?
-- Codeium, Copilot, ChatGPT
+- Codeium, Copilot, ChatGPT, SonarQube
+
 ### What are some ways devs can use AI?
 - Generate boilerplate code
 - Generate unit tests
+- Static code analysis
 - Debug
 
 ## Topics to think about concerning the use of AI in software development
