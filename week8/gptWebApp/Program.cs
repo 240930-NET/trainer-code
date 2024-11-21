@@ -1,9 +1,18 @@
+using Microsoft.SemanticKernel;
+
+var config  = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+var gptAPIKEY = config["apiKey"];
+var bingAPIKEY = config["bingAPI"];
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddKernel();
+builder.Services.AddOpenAIChatCompletion("gpt-3.5-turbo", gptAPIKEY!);
 
 var app = builder.Build();
 
@@ -16,22 +25,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
+app.MapGet("/", async (Kernel kernel) =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
+        var temp = Random.Shared.Next(45, 55);
+        return new WeatherForecast
         (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
+            DateOnly.FromDateTime(DateTime.Now.AddDays(Random.Shared.Next(5))),
+            temp,
+            await kernel.InvokePromptAsync<string>($"Give me a 5 word discription of what it feels like in {temp} degrees C.")
+        );
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
