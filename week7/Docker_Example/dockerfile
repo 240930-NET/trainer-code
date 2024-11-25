@@ -31,7 +31,7 @@ COPY --from=build /app/dist .
 CMD ["dotnet", "BudgetTracker.API.dll"]
 
 # To build image run:
-# docker build -t account/image-name:0.0.1
+# docker build -t account/image-name:0.0.1 .
 
 # To run image:
 # -d detached mode, frees terminal back to you
